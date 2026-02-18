@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #111111;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #111;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+section {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    margin: 1rem 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 35px;
+}
+
+
+#specstable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#specstable th,
+#specstable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#specstable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#specstable tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+#specstable th {
+    background-color: #dddddd;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #111111;
+    color: #eeeeee;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    border-color: #444;
+}
+
+.dark-mode nav a {
+    color: #eeeeee;
+}
+
+.dark-mode #specstable th {
+    background-color: #333;
+}
+
+.dark-mode #specstable td,
+.dark-mode #specstable th {
+    border-color: #555;
+}
+
+.dark-mode #specstable tbody tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+.dark-mode #specstable tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #specstable th,
+    #specstable td {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
